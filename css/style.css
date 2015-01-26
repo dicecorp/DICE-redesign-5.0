@@ -1,0 +1,537 @@
+/**
+ * Author: James J. Nelson
+ * Company: DICE Corporation
+ * Publishing Date: 2015
+ * Notes: CSS is using mobile first methodology;
+ */
+/* ---- Color Palette ---- */
+.amber { background-color: #ffc107; }
+.blue { background-color: #1a8fcf; }
+.dk-grey { background-color: #2f3030; }
+.lt-grey { background-color: #c4c4c4; }
+
+
+/* Font Colors */
+    /* Black */
+    .text-b { color: rgba(0, 0, 0, 0.87); }
+    .secondary-b { color: rgba(0, 0, 0, 0.54); }
+    .hint-b { color: rgba(0, 0, 0, 0.26); }
+    .divider-b { color: rgba(0, 0, 0, 0.12); }
+
+    /* White */
+    .text-w { color: rgba(255, 255, 255, 1); }
+    .secondary-w { color: rgba(255, 255, 255, 0.70); }
+    .hint-w { color: rgba(255, 255, 255, 0.30); }
+    .divider-w { color: rgba(255, 255, 255, 0.12); }
+
+    /* Yellow */
+    .t-amber { color: #ffc107; }
+
+
+/* ---- General Tags ---- */
+a {
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+a:hover {
+    text-decoration: none;
+}
+.center {
+    text-align: center;
+}
+
+
+
+
+/***********************************************************************************************/
+/* HEADER */
+/***********************************************************************************************/
+
+/* ---- HEADER (Image/Logo) ---- */
+.header-img {
+    display: none;
+}
+.header-logo {
+    display: none;
+}
+.header-logo img {
+    max-width: 471px;
+}
+
+
+/* ---- HEADER (Main Navigation) ---- */
+.affix {
+    top: 0;
+    width: 100%;
+    margin-top: 0px;
+}
+header .navbar {
+    margin-bottom: 0;
+}
+header .navbar-default {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.navbar-nav {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.navbar-default .navbar-nav li {
+    text-align: center;
+    font-weight: bold;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: rgba(0, 0, 0, 0.9);
+}
+.navbar-default .navbar-nav li a:hover {
+    color: #1a8fcf;
+}
+.navbar-default .navbar-brand {
+    line-height: 40px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.navbar-default .navbar-nav li {
+    background-color: rgba(255, 255, 255, 0.75);
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+    margin-top: 2px;
+}
+ul.dropdown-menu li a {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+
+
+
+/***********************************************************************************************/
+/* MAIN CONTENT */
+/***********************************************************************************************/
+
+/* ---- MAIN CONTENT (Tag Line) ---- */
+.center h2 {
+    letter-spacing: 1px;
+    font-size: 0.875em;
+}
+.amber h2 {
+    margin-top: 10px;
+}
+.content {
+    margin: 30px 0;
+}
+
+
+/* ---- MAIN CONTENT (About/Solutions/News/Upcoming Events) ---- */
+ul.solutions {
+    padding-left: 10px;
+    font-size: 1.125em;
+}
+ul.solutions li {
+    display: block;
+    margin: 10px 0;
+}
+ul.solutions li a {
+    color: rgba(0, 0, 0, 0.5);
+}
+ul.solutions li a:hover {
+    color: rgba(0, 0, 0, 0.9);
+}
+
+
+/* ---- MAIN CONTENT (Department Links) ---- */
+.departments {
+    background-color: #2f3030;
+}
+.center a h4 {
+    letter-spacing: 2px;
+}
+.center a:hover {
+    color: #ffc107;
+}
+.bubble {
+    width: 40%;
+    max-width: 140px;
+}
+
+
+/* ---- MAIN CONTENT (Highlight Video) ---- */
+.video {
+    position: relative;
+}
+.play-button {
+    position: absolute;
+    width: 100%;
+    bottom:30%;
+    z-index: 99;
+}
+.play-button a {
+    color: rgba(0, 0, 0, 0.75);
+    /*text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.75);*/
+}
+.play-button a:hover {
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.75);
+}
+.play-button .glyphicon {
+    font-size: 3em;
+}
+
+/* ---- MAIN CONTENT (Promotions/Advertisements) ---- */
+ul.motto {
+    width: 275px;
+    margin: 0 auto;
+}
+ul.motto li {
+    font-size: 1.125em;
+    line-height: 1.5em;
+    margin: 20px;
+    list-style-type: none;
+}
+ul.motto li img {
+    margin-bottom: 6px;
+}
+
+
+/* ---- MAIN CONTENT (Products) ---- */
+.product {
+    margin-top: 80px;
+}
+.inline li {
+    display: block;
+    margin: 5px 0;
+}
+/* ---- MAIN CONTENT (FAQ) ---- */
+.faq {
+    margin-top: 50px;
+}
+ul.faq-links li {
+    display: block;
+    font-weight: bold;
+    line-height: 14px;
+    margin: 10px 0;
+}
+a[id]:before {
+    content:"";
+    display: block;
+    height: 70px;
+    margin: -70px 0 0 0;
+}
+.sidebar {
+    margin-top: 50px;
+}
+
+
+/***********************************************************************************************/
+/* FOOTER */
+/***********************************************************************************************/
+.footer {
+    background-color: #2f3030;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+
+/* ---- FOOTER (Footer Navigation) ---- */
+ul.footer-nav {
+    padding: 0;
+}
+ul.footer-nav li {
+    display: block;
+    margin: 20px 0;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+ul.footer-nav li a {
+    color: rgba(255, 255, 255, 0.6);
+    letter-spacing: 1px;
+}
+ul.footer-nav li a:hover {
+    color: #1a8fcf;
+    text-decoration: none;
+}
+
+
+/* ---- FOOTER (Footer Links) ---- */
+ul.footer-links {
+    text-align: center;
+    margin: 20px 0 10px 0;
+    padding: 0;
+}
+.footer-links li {
+    display: inline;
+    margin: 0 3px;
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 10px;
+}
+.footer-links li:last-child {
+    margin-right: 0;
+}
+.footer-links li a {
+    color: #ffc107;
+}
+.footer-links li a:hover {
+    color: #1a8fcf;
+}
+
+
+/* ---- FOOTER (Footer Contact/Copyright) ---- */
+.footer p {
+    text-align: right;
+}
+.social {
+    text-align: right;
+}
+.social li {
+    display: inline;
+    margin: 0 15px;
+}
+.social li:last-child {
+    margin-right: 0;
+}
+
+
+
+
+/***********************************************************************************************/
+/* Media Query Min Screen Size 500 px */
+/***********************************************************************************************/
+@media screen and (min-width:500px) {
+    /* ---- General Styles ---- */
+    .large {
+        font-size: 18px;
+    }
+
+
+    /* ---- HEADER ---- */
+
+
+    /* ---- MAIN CONTENT ---- */    
+    .center h2 {
+        letter-spacing: 1px;
+        font-size: 1.5em;
+    }
+    
+
+    /* ---- FOOTER ---- */
+
+
+
+    /* ---- FOOTER (Footer Links) ---- */
+    ul.footer-links {
+        text-align: right;
+    }
+    .footer-links li {
+        margin: 0 15px;
+        font-size: 1em;
+    }
+}
+
+
+
+
+/***********************************************************************************************/
+/* Media Query Min Screen Size 768 px */
+/***********************************************************************************************/
+@media screen and (min-width:768px) {
+    /* ---- HEADER ---- */
+    .header-img {
+        display: block;
+    }
+    .header-logo {
+        display: block;
+    }
+    .header-logo {
+        height: 0;
+    }
+    .header-logo img {
+        margin: -18% 0 0 40px;
+        width: 30%;
+    }
+
+
+    /* ---- HEADER (Main Navigation) ---- */
+    .navbar-brand {
+        display: none;
+    }
+    header .navbar {
+        margin-bottom: -53px;
+        box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
+    }
+    .navbar-default .navbar-nav li {
+        background-color: transparent;
+        box-shadow: none;
+        font-size: 1em;
+        text-align: left;
+    }
+    .navbar-default .navbar-nav li {
+        color: #1a8fcf;
+    }
+    ul.nav li.dropdown:hover > ul.dropdown-menu {
+        display: block;
+        background-color: rgba(0, 0, 0, 0.9);
+        color: #1a8fcf;
+    }
+    ul.dropdown-menu li a:hover {
+        background-color: rgba(255, 255, 255, 0.75);
+    }
+    ul.nav li.dropdown:hover {
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    
+    /* ---- MAIN CONTAINER ---- */
+
+
+    /* ---- MAIN CONTAINER (Tag Line) ---- */
+    .center h2 {
+        letter-spacing: 2px;
+        font-size: 30px;
+    }
+
+
+    /* ---- MAIN CONTAINER (Video) ---- */
+    .play-button {
+        position: absolute;
+        width: 100%;
+        bottom: 30%;
+        z-index: 99;
+    }
+    .play-button .glyphicon {
+        font-size: 6em;
+    }
+
+
+    /* ---- FOOTER ---- */
+
+    /* ---- FOOTER (Footer Navigation) ---- */
+    ul.footer-nav {
+        margin-top: 20px;
+    }
+    ul.footer-nav li {
+        display: block;
+        margin: 5px 0;
+        border-bottom: none;
+        font-size: 12px;
+        text-align: left;
+    }
+    ul.footer-nav li a {
+        color: rgba(255, 255, 255, 0.6);
+        letter-spacing: 1px;
+    }
+    ul.footer-nav li a:hover {
+        color: #1a8fcf;
+        text-decoration: none;
+    }
+    
+    /* ---- FOOTER (Footer Links) ---- */
+    ul.footer-links {
+        text-align: right;
+        margin: 20px 0 10px 0;
+    }
+    .footer-links li {
+        display: inline;
+        margin: 0 3px;
+        color: rgba(0, 0, 0, 0.9);
+        font-size: 11px;
+    }
+    .footer-links li:last-child {
+        margin-right: 0;
+    }
+    .footer-links li a {
+        color: #ffc107;
+        letter-spacing: 1px;
+    }
+    .footer-links li a:hover {
+        color: #1a8fcf;
+    }
+}
+
+
+
+
+/***********************************************************************************************/
+/* Media Query Min Screen Size 992 px */
+/***********************************************************************************************/
+@media screen and (min-width:992px) {
+
+    /* ---- HEADER ---- */
+
+
+    /* ---- HEADER (Main Navigation) ---- */
+    .navbar-default .navbar-nav li {
+        font-size: 1.125em;
+    }
+
+
+    /* ---- MAIN CONTENT ---- */
+
+
+    /* ---- MAIN CONTENT (Video) ---- */
+    .play-button {
+        position: absolute;
+        width: 100%;
+        bottom: 35%;
+        z-index: 99;
+    }
+
+    
+    /* ---- MAIN CONTENT (Motto) ---- */
+    ul.motto {
+        width: auto;
+    }
+    ul.motto li {
+        font-size: 1.25em;
+        line-height: 1.75em;
+        margin: 20px;
+        list-style-type: none;
+    }
+    
+
+    /* ---- FOOTER ---- */
+
+
+    /* ---- FOOTER (Navigation) ---- */
+    ul.footer-nav li {
+        font-size: 14px;
+    }
+    .footer-links li {
+        font-size: 14px;
+        margin: 0 7px;
+    }
+}
+
+
+
+
+/***********************************************************************************************/
+/* Media Query Min Screen Size 1200 px */
+/***********************************************************************************************/
+@media screen and (min-width:1200px) {
+
+    /* ---- HEADER ---- */
+
+
+    /* ---- HEADER (Main Navigation) ---- */
+    .navbar-default .navbar-nav li {
+        font-size: 1.25em;
+    }
+    
+
+    /* ---- MAIN CONTENT ---- */
+
+
+    /* ---- MAIN CONTENT (Motto) ---- */
+    ul.motto li {
+        font-size: 1.75em;
+        line-height: 2.5em;
+        margin: 20px;
+        list-style-type: none;
+    }
+}
+
+
+
+
+
+
+
+
