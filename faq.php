@@ -367,7 +367,7 @@
                 </div>
                 <div class="col-sm-6">
                     <ul class="footer-links">
-                        <li><a href="#">Support Tickets</a></li>
+                        <li><a href="http://elink.dicecorp.com/tickets">Support Tickets</a></li>
                         <li>•</li>
                         <li><a href="#">Careers</a></li>
                         <li>•</li>
@@ -375,8 +375,8 @@
                         <li>•</li>
                         <li><a href="#">Privacy</a></li>
                     </ul>
-                    <p>For more information visit the <a class="t-amber" href="#"><strong>DICE Wiki</strong></a>, or call <a class="t-amber" href="tel:18007863423"><strong>+1 (800) RUN-DICE</strong></a></p>
-                    <p>Copyright &copy; <?php echo date("Y"); ?> <a href="#"><strong>DICE Corporation</strong></a>, all rights reserved</p>
+                    <p>For more information visit the <a class="t-amber" href="https://matrix.collaborate.wiki/wiki/login/"><strong>DICE Wiki</strong></a>, or call <a class="t-amber" href="tel:18007863423"><strong>+1 (800) RUN-DICE</strong></a></p>
+                    <p>Copyright &copy; <?php echo date("Y"); ?> <a href="index.php"><strong>DICE Corporation</strong></a>, all rights reserved</p>
                     <!-- <ul class="social">
                         <li><a href="#"><img src="img/social/android.png"   onmouseover="this.src='img/social/android-hover.png'"   onmouseout="this.src='img/social/android.png'"  alt="Android"></a></li>
                         <li><a href="#"><img src="img/social/apple.png"     onmouseover="this.src='img/social/apple-hover.png'"     onmouseout="this.src='img/social/apple.png'"    alt="Apple"></a></li>
